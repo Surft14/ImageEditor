@@ -2,7 +2,7 @@ from core import ImageEditor
 from typing import List
 from PIL import Image
 
-class Pipline(ImageEditor):
+class Pipeline(ImageEditor):
 
     steps: List[ImageEditor] = None
 

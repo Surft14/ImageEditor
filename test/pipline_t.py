@@ -7,7 +7,7 @@ from operators.brightness import Brightness
 from operators.color import Color
 from operators.contrast import Contrast
 from operators.sharpness import Sharpness
-from image_editor.pipeline import Pipline
+from image_editor.pipeline import Pipeline
 
 
 class TestPipline(unittest.TestCase):
@@ -17,7 +17,7 @@ class TestPipline(unittest.TestCase):
 
     def test_add_first_method(self):
 
-        pip = Pipline([
+        pip = Pipeline([
             Blur(radial=5),
             Brightness(radial=3),
             Color(radial=3),
@@ -29,7 +29,7 @@ class TestPipline(unittest.TestCase):
 
     def test_add_second_method(self):
         pip = (
-            Pipline()
+            Pipeline()
             .add(Blur(radial=5))
             .add(Brightness(radial=3))
             .add(Color(radial=3))
