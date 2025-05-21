@@ -9,8 +9,8 @@ __all__ = [
     "Sharpness"
 ]
 
-from color import Color
-from blur import Blur
-from contrast import Contrast
-from sharpness import Sharpness
-from brightness import Brightness
+from .color import Color
+from .blur import Blur
+from .contrast import Contrast
+from .sharpness import Sharpness
+from .brightness import Brightness
