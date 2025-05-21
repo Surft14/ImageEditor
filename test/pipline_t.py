@@ -2,15 +2,10 @@ import unittest
 
 from PIL import Image, ImageChops
 
-from operators.blur import Blur
-from operators.brightness import Brightness
-from operators.color import Color
-from operators.contrast import Contrast
-from operators.sharpness import Sharpness
-from image_editor.pipeline import Pipeline
+from image_editor import Pipeline, Blur, Brightness, Color, Contrast, Sharpness
 
 
-class TestPipline(unittest.TestCase):
+class TestPipeline(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.img = Image.open("beach.jpg")

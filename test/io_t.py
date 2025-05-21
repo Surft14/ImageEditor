@@ -38,7 +38,7 @@ class TestImageIO(unittest.TestCase):
         self.assertEqual(self.img.mode, "RGB",
                          "Ожидается, что beach.jpg в режиме RGB")
         converted = ImageIO.convert(None, self.img, "jpg")
-        self.assertIsInstance(converted, Image.Image)
+        self.assertIsInstance(converted, Image.Image, "Метод convert должен возвращать объект PIL.Image.Image")
         self.assertEqual(converted.mode, "RGB",
                          "RGB -> JPG не должно менять режим")
         self.assertEqual(converted.size, self.img.size)

@@ -16,10 +16,12 @@ class ImageIO:
             return False
 
     @staticmethod
-    def convert(self, img:Image.Image, format: str) -> Image.Image:
-
+    def convert(self, img: Image.Image, format: str) -> Image.Image:
         fmt = format.upper()
-        if fmt in ("JPG", "JPEG") and img.mode != "RGB":
+        if fmt == "JPG":
+            fmt = "JPEG"
+
+        if fmt in ("JPEG",) and img.mode != "RGB":
             img = img.convert("RGB")
         elif fmt == "PNG" and img.mode not in ("RGB", "RGBA"):
             img = img.convert("RGBA")

@@ -7,7 +7,7 @@ class Pipeline(ImageEditor):
     steps: List[ImageEditor] = None
 
     def __init__(self, steps: List[ImageEditor] = None):
-        self.steps: List[ImageEditor] = steps or None
+        self.steps: List[ImageEditor] = steps or []
 
     def add(self, editor: ImageEditor):
         self.steps.append(editor)
