@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="image-editor",            # pip install image-editor
-    version="1.0.0",
+    version="1.0.1",
     description="Modular image editor based on Pillow",
     author="Surft14",
     url="https://github.com/Surft14/ImageEditor",
