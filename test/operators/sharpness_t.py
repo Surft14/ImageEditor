@@ -1,7 +1,7 @@
 import unittest
 
 from PIL import Image, ImageChops
-from image_editors.operations.sharpness import Sharpness
+from image_editor.operations.sharpness import Sharpness
 
 
 class TestSharpness(unittest.TestCase):

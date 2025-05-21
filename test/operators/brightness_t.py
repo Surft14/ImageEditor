@@ -1,7 +1,7 @@
 import unittest
 from PIL import Image, ImageChops
 
-from image_editors.operations.brightness import Brightness
+from image_editor.operations.brightness import Brightness
 
 
 class TestBrightness(unittest.TestCase):

@@ -1,5 +1,5 @@
 from PIL import  Image, ImageFilter
-from image_editors.core import ImageEditor
+from image_editor.core import ImageEditor
 
 
 

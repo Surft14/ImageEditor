@@ -7,7 +7,7 @@ from operators.brightness import Brightness
 from operators.color import Color
 from operators.contrast import Contrast
 from operators.sharpness import Sharpness
-from image_editors.pipeline import Pipline
+from image_editor.pipeline import Pipline
 
 
 class TestPipline(unittest.TestCase):

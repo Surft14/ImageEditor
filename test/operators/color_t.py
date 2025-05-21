@@ -1,6 +1,6 @@
 import unittest
 from PIL import Image, ImageChops
-from image_editors.operations.color import Color
+from image_editor.operations.color import Color
 
 class TestColor(unittest.TestCase):
 

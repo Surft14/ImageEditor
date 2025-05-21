@@ -1,7 +1,7 @@
 import unittest
 import os
 from PIL import Image
-from image_editors.io import ImageIO
+from image_editor.io import ImageIO
 from tempfile import NamedTemporaryFile
 
 

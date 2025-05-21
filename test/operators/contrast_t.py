@@ -2,7 +2,7 @@ import unittest
 
 from PIL import Image, ImageChops
 
-from image_editors.operations.contrast import Contrast
+from image_editor.operations.contrast import Contrast
 
 
 class TestContrast(unittest.TestCase):

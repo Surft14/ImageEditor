@@ -22,7 +22,7 @@ from operations.blur import Blur
 from operations.contrast import Contrast
 from operations.sharpness import Sharpness
 from operations.brightness import Brightness
-from image_editors.io import ImageIO
+from image_editor.io import ImageIO
 from core import ImageEditor
 from pipeline import Pipline
 

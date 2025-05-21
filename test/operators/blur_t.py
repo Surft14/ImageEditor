@@ -1,7 +1,7 @@
 import unittest
 from PIL import Image, ImageChops
 
-from image_editors.operations.blur import Blur
+from image_editor.operations.blur import Blur
 
 
 class TestBlur(unittest.TestCase):
