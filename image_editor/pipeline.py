@@ -1,4 +1,4 @@
-from core import ImageEditor
+from image_editor.core import ImageEditor
 from typing import List
 from PIL import Image
 
