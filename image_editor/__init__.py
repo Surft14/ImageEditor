@@ -5,6 +5,7 @@ __version__ = "1.0.0"
 __all__ = [
     "ImageIO",
     "Pipeline",
+    "ImageEditor",
     "Blur",
     "Brightness",
     "Color",
@@ -25,6 +26,7 @@ from .operations.sharpness import Sharpness
 from .operations.brightness import Brightness
 from .io import ImageIO
 from .pipeline import Pipeline
+from .core import ImageEditor
 
 def load(path: str):
     return ImageIO.open(path)
