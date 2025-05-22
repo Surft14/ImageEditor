@@ -1,6 +1,6 @@
 # ImageEditor/__init__.py
 
-__version__ = "1.0.1"
+__version__ = "1.1.0"
 
 __all__ = [
     "ImageIO",
@@ -11,6 +11,7 @@ __all__ = [
     "Color",
     "Contrast",
     "Sharpness",
+    "Tone",
     "load",
     "save"
 ]
@@ -24,6 +25,7 @@ from .operations.blur import Blur
 from .operations.contrast import Contrast
 from .operations.sharpness import Sharpness
 from .operations.brightness import Brightness
+from .operations.tone import Tone
 from .io import ImageIO
 from .pipeline import Pipeline
 from .core import ImageEditor
